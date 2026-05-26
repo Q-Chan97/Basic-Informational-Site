@@ -9,19 +9,19 @@ const server = http.createServer((req, res) => {
     switch (req.url) {
         case "/":
             path += "index.html";
-            req.statusCode = 200;
+            res.statusCode = 200;
             break;
         case "/about":
             path += "about.html";
-            req.statusCode = 200;
+            res.statusCode = 200;
             break;
         case "/contact-me":
             path += "contact-me.html";
-            req.statusCode = 200;
+            res.statusCode = 200;
             break;
         default: 
             path += "404.html";
-            req.statusCode = 404;
+            res.statusCode = 404;
     }
 
     fs.readFile(path, "utf8", (err, data) => {
