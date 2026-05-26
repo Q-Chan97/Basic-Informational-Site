@@ -19,6 +19,9 @@ const server = http.createServer((req, res) => {
             path += "contact-me.html";
             req.statusCode = 200;
             break;
+        default: 
+            path += "404.html";
+            req.statusCode = 404;
     }
 
     fs.readFile(path, "utf8", (err, data) => {
