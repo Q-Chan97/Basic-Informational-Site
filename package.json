@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Q-Chan97/Basic-Informational-Site/issues"
   },
-  "homepage": "https://github.com/Q-Chan97/Basic-Informational-Site#readme"
+  "homepage": "https://github.com/Q-Chan97/Basic-Informational-Site#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
